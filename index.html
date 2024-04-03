@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Study Time Tracker</title>
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <h2>Study Time Tracker</h2>
+
+  <!-- Date and Chapter Name input fields -->
+  <div id="headerInputs">
+    <label for="studyDate">Date:</label>
+    <input type="date" id="studyDate" name="studyDate">
+
+    <label for="chapterName">Chapter Name:</label>
+    <input type="text" id="chapterName" name="chapterName" placeholder="Enter chapter name...">
+  </div>
+
+  <!-- Table for tracking study time -->
+  <table id="studyTable">
+    <thead>
+      <tr>
+        <th>Task Name</th>
+        <th>Starting Time</th>
+        <th>Function of Time</th>
+        <th>End Time</th>
+        <th>Taken Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Table rows will be dynamically added here -->
+    </tbody>
+  </table>
+  <button class="add-row-btn" onclick="addRow()">Add Row</button>
+  
+  <!-- Total time calculation section -->
+  <div id="totalTimeSection">
+    <h3>Total Time</h3>
+    <p id="totalFunctionTime">Total Function of Time: <span>0</span> hours 0 minutes</p>
+    <p id="totalTakenTime">Total Taken Time: <span>0</span> hours 0 minutes</p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* CSS for styling the Study Time Tracker webpage */
+
+/* Import Hind Siliguri font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap');
+
+/* Overall container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0f8ff; /* Light blue background */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+/* Header styling */
+h2 {
+  color: #4169e1; /* Royal blue */
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+/* Input fields */
+input[type="date"],
+input[type="text"],
+input[type="time"],
+.add-row-btn {
+  margin: 5px;
+  padding: 8px;
+  border: 1px solid #87ceeb; /* Light sky blue border */
+  border-radius: 5px;
+  width: calc(100% - 22px); /* Adjusted width */
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+input[type="date"]:focus,
+input[type="text"]:focus,
+input[type="time"]:focus {
+  outline: none;
+  border-color: #4169e1; /* Royal blue focus color */
+}
+
+/* Table styling */
+#studyTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+#studyTable th,
+#studyTable td {
+  padding: 10px;
+  border-bottom: 1px solid #87ceeb; /* Light sky blue border */
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+#studyTable th {
+  background-color: #4169e1; /* Royal blue header background */
+  color: #fff; /* White text color */
+}
+
+#studyTable tbody tr:nth-child(even) {
+  background-color: #f0f8ff; /* Light blue alternating row background */
+}
+
+/* Total time section styling */
+#totalTimeSection {
+  margin-top: 20px;
+}
+
+#totalTimeSection h3 {
+  color: #4169e1; /* Royal blue */
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+#totalTimeSection p {
+  margin: 5px 0;
+  color: #4169e1; /* Royal blue */
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+/* Button styling */
+.add-row-btn {
+  background-color: #4169e1; /* Royal blue button background */
+  color: #fff; /* White text color */
+  cursor: pointer;
+  font-family: 'Hind Siliguri', sans-serif; /* Apply Hind Siliguri font */
+}
+
+.add-row-btn:hover {
+  background-color: #6495ed; /* Cornflower blue hover background */
+}
